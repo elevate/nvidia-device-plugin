@@ -2,7 +2,7 @@
 
 set -e
 
-IMAGE='pure/nvidia-device-plugin'
+IMAGE='docker-registry2.elevate.direct:5000/nvidia-device-plugin'
 
 for d in $(find . -mindepth 1 -maxdepth 1 -type d -iname 'tesla*'); do
     TAG=$(basename "$d")
